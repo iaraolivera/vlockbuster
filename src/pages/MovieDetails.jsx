@@ -1,4 +1,3 @@
-import movie from "./movie.json"
 import styles from "./MovieDetails.module.css"
 import {useParams} from "react-router-dom"
 import { useEffect, useState } from "react"

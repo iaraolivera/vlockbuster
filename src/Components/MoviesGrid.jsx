@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import movies from "../api/movies.json"
 import { Pagination } from "../pages/Pagination";
 import { get } from "../utils/httpClient";
 import { MovieCard } from "./MovieCard"
