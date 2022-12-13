@@ -1,0 +1,45 @@
+.itemPagina {
+  width: 50px !important;
+  height: 40px;
+
+  text-align: center;
+  padding-top: 5px;
+}
+
+.pagina {
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(119, 118, 118);
+}
+.pagina:active {
+  color: red;
+}
+
+.pagina:hover {
+  color: white;
+}
+
+.previous {
+  width: 100px;
+  border-radius: 50px 0px 0px 50px;
+
+  text-align: center;
+  padding-top: 5px;
+}
+
+.next {
+  width: 100px;
+  border-radius: 0px 50px 50px 0px;
+
+  text-align: center;
+  padding-top: 5px;
+}
+.activa {
+  color: red;
+  border: 2px solid rgba(61, 61, 61, 0.3);
+  padding: 5px 10px 10px 7px;
+}
+.inactivo {
+  cursor: default !important;
+  pointer-events: none;
+}

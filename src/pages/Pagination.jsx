@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './Pagination.module.css'
 
 export const Pagination = ({moviePerPage, totalMovies, currentPage, setCurrentPage}) => {
 
@@ -28,18 +29,18 @@ export const Pagination = ({moviePerPage, totalMovies, currentPage, setCurrentPa
   return (
     <nav aria-label="Page navigation example mb-5" >
     <ul className="pagination justify-content-center">
-    <li className="page-item">
-      <a onClick={previusPage} className={`page-link ${currentPage ===1 ? "disabled" : ""} `}aria-label="Previous">
+    <li className={styles.previous}>
+      <a onClick={previusPage} className={`${styles.pagina} ${currentPage ===1 ? styles.inactivo : ""} `}aria-label="Previous">
         Previous
       </a>
     </li>
     {pageNumbers.map(noPage => (
-        <li key={noPage} className="page-item"><a className={`page-link ${noPage === currentPage ? "active" : ''}`} 
+        <li key={noPage} className={styles.itemPagina}><a className={`${styles.pagina} ${noPage === currentPage ? styles.activa : ''}`} 
         onClick={()=> specificPage(noPage)}
         >{noPage}</a></li>
     ))}
-     <li className="page-item">
-      <a onClick={nextPage} className={`page-link ${currentPage >=pageNumbers.length ? "disabled" : ""} `}  aria-label="Next">
+     <li className={styles.next}>
+      <a onClick={nextPage} className={`${styles.pagina} ${currentPage >=pageNumbers.length ? styles.inactivo  : ""} `}  aria-label="Next">
         Next
       </a>
     </li>
