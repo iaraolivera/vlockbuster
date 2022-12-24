@@ -1,0 +1,26 @@
+.busquedaContenedor {
+  display: flex;
+  justify-content: end;
+}
+
+.inputBusqueda {
+  width: 200px;
+  border: none;
+  border-bottom: 2px solid white;
+  background: none;
+  font-size: 1.2rem;
+}
+
+.botonBusqueda {
+  color: white;
+  padding: 0 5px 3px 0;
+}
+
+.inputBusqueda:focus {
+  outline: none;
+}
+
+.botonBusqueda:focus {
+  outline: none !important;
+  border: none;
+}

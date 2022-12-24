@@ -1,0 +1,15 @@
+.loadingto {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.animar {
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
